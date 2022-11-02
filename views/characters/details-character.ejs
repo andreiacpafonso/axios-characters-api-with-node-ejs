@@ -3,3 +3,9 @@
 <h3>Occupation: <%= character.occupation %></h3>
 
 <p>Weapon: <%= character.weapon %></p>
+
+<!-- to creat a FORM to delete the character -->
+
+<form method="POST" action="/characters/<%= character._id %>/delete">
+  <button type="submit">Delete character</button>
+</form>
